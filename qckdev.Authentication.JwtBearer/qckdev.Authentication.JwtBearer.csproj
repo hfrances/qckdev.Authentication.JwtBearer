@@ -1,13 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net6.0;net5.0;netcoreapp3.1</TargetFrameworks>
-    <Version>0.1.0-alpha</Version>
+    <TargetFrameworks>net6.0;netstandard2.0</TargetFrameworks>
+    <Version>0.2.0-alpha</Version>
     <Authors>hfrances</Authors>
     <Company>TrCode</Company>
     <Product>qckdev.Authentication.JwtBearer (Preview)</Product>
+    <Description>Contains classes for working with jwt tokens.</Description>
     <PackageProjectUrl>https://github.com/hfrances/qckdev.Authentication.JwtBearer</PackageProjectUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
