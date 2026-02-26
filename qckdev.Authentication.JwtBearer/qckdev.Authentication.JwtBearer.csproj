@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net6.0;netstandard2.0</TargetFrameworks>
-    <Version>0.2.0-alpha</Version>
+    <TargetFrameworks>netstandard2.0;netcoreapp3.1;net5.0;net6.0;net8.0;net10.0</TargetFrameworks>
+    <Version>0.3.0-alpha</Version>
     <Authors>hfrances</Authors>
     <Company>TrCode</Company>
     <Product>qckdev.Authentication.JwtBearer (Preview)</Product>
@@ -12,8 +12,14 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.22.0" />
+  <!-- netstandard2.0 / netcoreapp3.1 / net5.0: versión 6.x, mínima sin vulnerabilidad GHSA-59j7-ghrg-fj52 -->
+  <ItemGroup Condition="'$(TargetFramework)'=='netstandard2.0' or '$(TargetFramework)'=='netcoreapp3.1' or '$(TargetFramework)'=='net5.0'">
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.34.0" />
+  </ItemGroup>
+
+  <!-- net6.0 / net8.0 / net10.0: versión 8.x, compatible y sin vulnerabilidades conocidas -->
+  <ItemGroup Condition="'$(TargetFramework)'=='net6.0' or '$(TargetFramework)'=='net8.0' or '$(TargetFramework)'=='net10.0'">
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.0.0" />
   </ItemGroup>
 
 </Project>
