@@ -1,7 +1,7 @@
-<a href="https://www.nuget.org/packages/qckdev.Authentication.JwtBearer"><img src="https://img.shields.io/nuget/v/qckdev.Authentication.JwtBearer.svg" alt="NuGet Version"/></a>
-<a href="https://sonarcloud.io/dashboard?id=qckdev.Authentication.JwtBearer"><img src="https://sonarcloud.io/api/project_badges/measure?project=qckdev.Authentication.JwtBearer&metric=alert_status" alt="Quality Gate"/></a>
-<a href="https://sonarcloud.io/dashboard?id=qckdev.Authentication.JwtBearer"><img src="https://sonarcloud.io/api/project_badges/measure?project=qckdev.Authentication.JwtBearer&metric=coverage" alt="Code Coverage"/></a>
-<a><img src="https://hfrances.visualstudio.com/qckdev/_apis/build/status/qckdev.Authentication.JwtBearer?branchName=master" alt="Azure Pipelines Status"/></a>
+[![NuGet Version](https://img.shields.io/nuget/v/qckdev.Authentication.JwtBearer.svg)](https://www.nuget.org/packages/qckdev.Authentication.JwtBearer)
+[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=qckdev.Authentication.JwtBearer&metric=alert_status)](https://sonarcloud.io/dashboard?id=qckdev.Authentication.JwtBearer)
+[![Code Coverage](https://sonarcloud.io/api/project_badges/measure?project=qckdev.Authentication.JwtBearer&metric=coverage)](https://sonarcloud.io/dashboard?id=qckdev.Authentication.JwtBearer)
+![Azure Pipelines Status](https://hfrances.visualstudio.com/qckdev/_apis/build/status/qckdev.Authentication.JwtBearer?branchName=master)
 
 
 # qckdev.Authentication.JwtBearer
@@ -34,3 +34,9 @@ Contains classes for working with jwt tokens.
         };
 
 ```
+
+## 🤝 Contributing
+Issues and pull requests are welcome! See the contribution guidelines (coming soon).
+
+## 📜 License
+This project is licensed under the terms of the [MIT License](LICENSE).
