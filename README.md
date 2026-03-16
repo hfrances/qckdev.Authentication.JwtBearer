@@ -8,6 +8,14 @@
 
 Contains classes for working with jwt tokens.
 
+## 🛠️ Installation
+
+```bash
+dotnet add package qckdev.Authentication.JwtBearer
+```
+
+## ⚡ Quick Start
+
 ```cs
 
     using Microsoft.IdentityModel.Tokens;
